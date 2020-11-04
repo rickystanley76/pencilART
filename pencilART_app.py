@@ -3,6 +3,8 @@ import numpy as np
 from PIL import Image
 import cv2
 
+@st.cache  
+
 def dodgeV2(x, y):
     return cv2.divide(x, 255 - y, scale=256)
 
